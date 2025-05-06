@@ -6,110 +6,67 @@
   <title>Febraban Power BI</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
       background-color: #0c2238;
       color: white;
-      text-align: center;
-    }
-
-    header {
-      background-color: #0c2238;
-      padding: 40px 20px 20px 20px;
-    }
-
-    h1 {
-      font-size: 3em;
       margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-
-    h2 {
-      color: #b0c4d8;
-      font-weight: normal;
-      margin: 10px 0 40px;
-      font-size: 1.3em;
+    .header {
+      text-align: center;
+      margin-top: 60px;
     }
-
-    .section {
-      padding: 60px 20px;
+    .header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
     }
-
-    .section h3 {
-      font-size: 1.8em;
-      margin-bottom: 20px;
+    .header p {
+      font-size: 1.2em;
+      color: #cfd8dc;
     }
-
-    iframe {
-      width: 90%;
-      height: 600px;
-      border: none;
-      margin-top: 20px;
+    .nav-buttons {
+      margin-top: 30px;
     }
-
-    nav {
-      margin-top: 20px;
-    }
-
-    nav a {
-      color: #00bfff;
-      margin: 0 12px;
-      font-size: 1em;
+    .nav-buttons a {
+      background-color: #d3d3d3;
+      color: black;
       text-decoration: none;
+      font-weight: bold;
+      margin: 0 15px;
+      padding: 12px 25px;
+      border-radius: 6px;
+      transition: background-color 0.3s;
     }
-
-    nav a:hover {
-      text-decoration: underline;
+    .nav-buttons a:hover {
+      background-color: #b0bec5;
     }
-
     footer {
-      background-color: #081a2e;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #ccc;
+      position: absolute;
+      bottom: 10px;
+      left: 15px;
+      font-size: 0.8em;
+      color: #cfd8dc;
+      text-align: left;
     }
   </style>
 </head>
 <body>
-
-  <!-- CABEÇALHO -->
-  <header>
+  <div class="header">
     <h1>FEBRABAN POWER BI</h1>
-    <h2>Painéis estratégicos interativos para decisão institucional</h2>
+    <p>Painéis estratégicos interativos para decisão institucional</p>
+  </div>
 
-    <!-- Navegação -->
-    <nav>
-      <a href="#dash1">1. Ocupações em Tecnologia</a>
-      <a href="#dash2">2. Novo CAGED</a>
-      <a href="#dash3">3. Dashboard Exemplo</a>
-      <!-- Pode seguir com: dash4, dash5, até dash10 -->
-    </nav>
-  </header>
+  <div class="nav-buttons">
+    <a href="ocupacoes.html">Panorama de RH, Jurídico Trabalhista e Sindical</a>
+    <a href="index.html">PRINCIPAIS ESTATÍSTICAS</a>
+  </div>
 
-  <!-- DASH 1 -->
-  <section class="section" id="dash1">
-    <h3>1. Painel de Ocupações em Tecnologia no Setor Bancário</h3>
-    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYWJlMzM0YWUtZGI2MC00ZTQ4LThhZWItNDYzZmM3NDFlNDdkIiwidCI6IjBiMjZmNzE4LTI2Y2QtNDA4YS04N2Y2LTliMDQyZGYyYzcwNyJ9" allowfullscreen></iframe>
-  </section>
-
-  <!-- DASH 2 -->
-  <section class="section" id="dash2">
-    <h3>2. Painel de Informações RAIS/CAGED</h3>
-    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNTE1ZWRlZGEtNWViNC00M2FhLThjMjQtY2UxMWUyOWQ0ZjI5IiwidCI6IjBiMjZmNzE4LTI2Y2QtNDA4YS04N2Y2LTliMDQyZGYyYzcwNyJ9" allowfullscreen></iframe>
-  </section>
-
-  <!-- DASH 3 -->
-  <section class="section" id="dash3">
-    <h3>3. 34° Encontro de RH e Trabalhista do Setor Bancário</h3>
-    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNGE0NDEzMWMtNGYxMi00MGQzLTkxNDAtMDIxYmU0MWJkNGVlIiwidCI6IjBiMjZmNzE4LTI2Y2QtNDA4YS04N2Y2LTliMDQyZGYyYzcwNyJ9" allowfullscreen></iframe>
-  </section>
-
-  <!-- DASH 4 -->
-  <section class="section" id="dash4">
-    <h3>3.  Dashboard Exemplo em construção (Em breve)</h3>
-    <iframe src= "https://app.powerbi.com/view?r=LINK_DO_PAINEL_3" allowfullscreen></iframe>
-  </section>
-
-<footer>
-  <p>&copy; 2025 · Febraban Power BI</p>
-  <p>Portal de dashboards estratégicos</p>
-</footer>
+  <footer>
+    &copy; 2025 FEBRABAN<br />
+    Portal de Dashboards Estratégicos
+  </footer>
+</body>
+</html>
